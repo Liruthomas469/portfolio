@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/34f0b7c22c.js" crossorigin="anonymous"></script>">
 </head>
 <body>
     <div id="header">
         <div class="logo">LOGO</div>
         <nav class="navbar">
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#Contacts">Contacts</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            
         </ul>
+        
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        
     </nav>
     <div class="header-text">
         <p>Junior Developer</p>
@@ -32,9 +38,8 @@
                 <div class="aboutcolmn1"><img src="P1590168.JPG"></div>
                 <div class="aboutcolmn2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am currently pursuing a Bachelor's Degree in Information Technology at Zetech University and I am ready to gain practical experience in the field of computing and technology.
-                        Throughout my academic journey, I have developed a strong foundation in Information Technology and a passion in computing as technology is concerned. I believe that an industrial attachment at Braeburn School  would provide me with valuable hands on experience and exposure to real-world applications of knowledge I have gained. I have attached my CV together with my attachment letter from the University as I am  looking forward to working with you</p>
-                
+                    <p>I'm a professional front-end web developer with two years of working experience In Responsive Web Design and Development. I'm highly self-motivated, independent, and confident in my ability to turn ideas into visually compelling and functional websites.
+                         With a keen eye for detail and a solid understanding of modern design principles, I create digital experiences that look great on any device and deliver real value to users and businesses.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -126,13 +131,13 @@
         <h1 class="sub-title">Contact Me</h1>
         <div class="row">
             <div class="contact-left">
-                <p>liruthomas469@gmail.com</p>
-                <p>+254715405940</p>
+                <p><i class="fa-solid fa-envelope"> </i>liruthomas469@gmail.com</p>
+                 <p><i class="fa-solid fa-phone"> </i>+254715405940</p>
                 <div class="social-icons">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    
                 </div>
                 <a href="Portfolio/Liru.Resume2.docx" download class="btn btn2">Download CV</a>
             </div>
@@ -178,6 +183,15 @@
             document.getElementById(tabname).classList.add("active-tab");
                
          }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
     </script>
 
     
