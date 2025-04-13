@@ -117,6 +117,7 @@ nav ul li a:hover::after{
 <!--------services-------->
 #services{
     padding: 50px;
+    
 }
 .services-list{
     display: flex;
@@ -247,7 +248,7 @@ form .btn.btn2{
         background: black;
         position: fixed;
         top: 0;
-        right: -150px;
+        right: 0px;
         width: 150px;
         eight: 100vh;
         padding-top: 50px;
@@ -286,4 +287,9 @@ form .btn.btn2{
     .work-list{
         display: list-item;
     }
+    }
+    #msg{
+        color: chartreuse;
+        margin-top: -40px;
+        display: block;
     }
